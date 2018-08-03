@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>水系统</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.8537461,13.5089373 C23.2927358,13.882875 24.5813523,14.6433723 25.6017565,15.6723322 C27.081658,17.1640221 28,19.2252344 28,21.4946533 L28,27 L23.7735596,27 L23.7735596,21.4946533 C23.7735596,20.402584 23.3294041,19.4079777 22.6134456,18.6871021 C22.3850157,18.4568267 22.1299497,18.2551096 21.8537461,18.0862994 L21.8537461,19.3939289 L13.3733368,19.3939289 L13.3733368,11.6868826 L14.9583472,11.6868826 L14.9583472,10.5584841 L16.4951554,10.5584841 L16.4951554,8.77220985 L11.9991969,8.77220985 C11.473544,8.77220985 11.0442953,8.33922356 11.0442953,7.80932296 C11.0442953,7.27832481 11.473544,6.84566779 11.9991969,6.84566779 L16.4951554,6.84566779 L16.4951554,6 L18.5457565,6 L18.5457565,6.84555803 L23.1817513,6.84555803 C23.7069689,6.84555803 24.1369793,7.27821506 24.1369793,7.80921321 C24.1369793,8.3391138 23.7069689,8.7721001 23.1817513,8.7721001 L18.5457565,8.7721001 L18.5457565,10.5583744 L20.4090984,10.5583744 L20.4090984,11.6867729 L21.8537461,11.6867729 L21.8537461,13.5089373 Z M12.8180881,18.3086644 L12.8180881,13.6022296 C11.5113005,13.9998746 10.3404145,14.7214086 9.39824352,15.6723322 C7.91812435,17.1640221 7,19.2252344 7,21.4946533 L7,27 L11.2264404,27 L11.2264404,21.4946533 C11.2264404,20.402584 11.6705959,19.4079777 12.3865544,18.6871021 C12.5210016,18.5504497 12.6652356,18.4239622 12.8180881,18.3086644 Z" id="path-1"></path>
+        <filter x="-76.2%" y="-66.7%" width="252.4%" height="252.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.136954788   0 0 0 0 0.273297634   0 0 0 0 0.465029762  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-799.000000, -91.000000)">
+        <g id="水系统" transform="translate(802.000000, 93.000000)">
+            <g id="Shape" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#56E4FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <circle id="Oval-5" stroke="#56E4FF" stroke-width="3" cx="17.5" cy="17.5" r="17.5"></circle>
+        </g>
+    </g>
+</svg>
