@@ -7,44 +7,121 @@
 </head>
 <body>
 
-<div class="main">
-  <div class="ui-box icon icon-down v1">
-    <p>消防系统</p>
-    <p>1</p>
+<div class="app">
+  <div class="app-page page-home">
+    <div class="app-container">
+
+      <div class="ui-box icon icon-down v1"> <a href="#water">消防水系统</a> <p>1</p> </div>
+      <div class="ui-box icon icon-down v2"> <a href="#element">环境监测系统</a> <p>2</p> </div>
+      <div class="ui-box icon icon-down v3"> <a href="#alarm">消防报警系统</a> <p>3</p> </div>
+      <div class="ui-box icon icon-left v4"> <a href="#faceId">人脸识别系统</a> <p>4</p> </div>
+      <div class="ui-box icon icon-left v5"> <a href="#guest">自助访客系统</a> <p>5</p> </div>
+      <div class="ui-box icon icon-right v6"> <a href="#elevator">电梯检测系统</a> <p>6</p> </div>
+      <div class="ui-box icon icon-right v7"> <a href="#hvac">暖通系统</a> <p>7</p> </div>
+      <div class="ui-box icon icon-down v8"> <a href="#park">停车场系统</a> <p>8</p> </div>
+      <div class="ui-box icon icon-down v9"> <a href="#">实时路况监测</a> <p>9</p> </div>
+
+    </div>
   </div>
-  <div class="ui-box icon icon-down v2">
-    <p>环境监测系统</p>
-    <p>2</p>
+  <div class="app-page page-water">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>1 消防水系统 </h1>
+      <p id="water-data" style="margin-left: 300px"></p>
+    </div>
   </div>
-  <div class="ui-box icon icon-down v3">
-    <p>消防报警系统</p>
-    <p>3</p>
+  <div class="app-page page-element">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>2 环境监测系统</h1>
+      <p id="element-data" style="margin-left: 300px"></p>
+    </div>
   </div>
-  <div class="ui-box icon icon-left v4">
-    <p>人脸识别系统</p>
-    <p>4</p>
+  <div class="app-page page-alarm">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>3 消防报警系统</h1>
+    </div>
   </div>
-  <div class="ui-box icon icon-left v5">
-    <p>自助访客系统</p>
-    <p>5</p>
+  <div class="app-page page-faceId">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>4 人脸识别系统</h1>
+    </div>
   </div>
-  <div class="ui-box icon icon-right v6">
-    <p>电梯检测系统</p>
-    <p>6</p>
+  <div class="app-page page-guest">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>5 自助访客系统</h1>
+    </div>
   </div>
-  <div class="ui-box icon icon-right v7">
-    <p>暖通系统</p>
-    <p>7</p>
+  <div class="app-page page-elevator">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>6 电梯检测系统</h1>
+    </div>
   </div>
-  <div class="ui-box icon icon-down v8">
-    <p>停车场系统</p>
-    <p>8</p>
+  <div class="app-page page-hvac">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>7 暖通系统 </h1>
+      <div class="ui-hvac v1"><p>锅炉#1</p></div>
+      <div class="ui-hvac v2"><p>锅炉#2</p></div>
+      <div class="ui-hvac v3"><p>锅炉#3</p></div>
+      <div class="ui-hvac v4">
+        <div>
+          <p>热水循环泵#1</p>
+          <p>温度:60°C</p>
+        </div>
+      </div>
+      <div class="ui-hvac v5">
+        <div>
+          <p>热水循环泵#2</p>
+          <p>温度:60°C</p>
+        </div>
+      </div>
+      <div class="ui-hvac v6">
+        <div>
+          <p>热水循环泵#3</p>
+          <p>温度:60°C</p>
+        </div>
+      </div>
+      <div class="ui-hvac v7">
+        <div>
+          <p>热水循环泵#4</p>
+          <p>温度:60°C</p>
+        </div>
+      </div>
+      <div class="ui-hvac v8">
+        <div>
+          <p>暖源分水器#1</p>
+          <p>温度:60°C  1200Mpa</p>
+        </div>
+      </div>
+      <div class="ui-hvac v9">
+        <div>
+          <p>暖源分水器#2</p>
+          <p>温度:60°C  1300Mpa</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="ui-box icon icon-down v9">
-    <p>实时路况监测</p>
-    <p>9</p>
+  <div class="app-page page-park">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>8 停车场系统 </h1>
+    </div>
+  </div>
+  <div class="app-page page-traffic">
+    <div class="app-container">
+      <a class="page-back" href="#home"></a>
+      <h1>9 实时路况监测</h1>
+    </div>
   </div>
 </div>
 
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/backbone-file-2.js"></script>
+<script src="static/js/map.js"></script>
 </body>
 </html>
