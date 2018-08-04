@@ -11,15 +11,24 @@
   <div class="app-page page-home">
     <div class="app-container">
 
-      <div class="ui-box icon icon-down v1"> <a href="#water">消防水系统</a> <p>1</p> </div>
-      <div class="ui-box icon icon-down v2"> <a href="#element">环境监测系统</a> <p>2</p> </div>
-      <div class="ui-box icon icon-down v3"> <a href="#alarm">消防报警系统</a> <p>3</p> </div>
-      <div class="ui-box icon icon-left v4"> <a href="#faceId">人脸识别系统</a> <p>4</p> </div>
-      <div class="ui-box icon icon-left v5"> <a href="#guest">自助访客系统</a> <p>5</p> </div>
-      <div class="ui-box icon icon-right v6"> <a href="#elevator">电梯检测系统</a> <p>6</p> </div>
-      <div class="ui-box icon icon-right v7"> <a href="#hvac">暖通系统</a> <p>7</p> </div>
-      <div class="ui-box icon icon-down v8"> <a href="#park">停车场系统</a> <p>8</p> </div>
-      <div class="ui-box icon icon-down v9"> <a href="#">实时路况监测</a> <p>9</p> </div>
+      <div class="ui-box icon icon-down v1"><a href="#water">消防水系统</a>
+        <p>1</p></div>
+      <div class="ui-box icon icon-down v2"><a href="#element">环境监测系统</a>
+        <p>2</p></div>
+      <div class="ui-box icon icon-down v3"><a href="#alarm">消防报警系统</a>
+        <p>3</p></div>
+      <div class="ui-box icon icon-left v4"><a href="#faceId">人脸识别系统</a>
+        <p>4</p></div>
+      <div class="ui-box icon icon-left v5"><a href="#guest">自助访客系统</a>
+        <p>5</p></div>
+      <div class="ui-box icon icon-right v6"><a href="#elevator">电梯检测系统</a>
+        <p>6</p></div>
+      <div class="ui-box icon icon-right v7"><a href="#hvac">暖通系统</a>
+        <p>7</p></div>
+      <div class="ui-box icon icon-down v8"><a href="#park">停车场系统</a>
+        <p>8</p></div>
+      <div class="ui-box icon icon-down v9"><a href="#">实时路况监测</a>
+        <p>9</p></div>
 
     </div>
   </div>
@@ -27,38 +36,165 @@
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>1 消防水系统 </h1>
-      <p id="water-data" style="margin-left: 300px"></p>
+      <div class="data-water">
+        <h4>水系统检测装置总数：<span id="dw-total"></span></h4>
+        <div>
+          <object type="image/svg+xml" data="static/img/icon-9.svg"></object>
+          <span>正常状态</span>
+          <span id="dw-normal">0</span>
+        </div>
+        <div>
+          <object type="image/svg+xml" data="static/img/icon-9-2.svg"></object>
+          <span>报警状态</span>
+          <span id="dw-alarm">0</span>
+        </div>
+        <div>
+          <object type="image/svg+xml" data="static/img/icon-9-3.svg"></object>
+          <span>离线状态</span>
+          <span id="dw-offLine">0</span>
+        </div>
+      </div>
+      <div class="ui-water v1">C座33层最不利点试验栓</div>
+      <div class="ui-water v2">公寓楼最不利点试验栓</div>
+      <div class="ui-water v3">D座3层湿式报警阀间</div>
+      <div class="ui-water v4">A座26层水泵房喷淋泵</div>
     </div>
   </div>
   <div class="app-page page-element">
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>2 环境监测系统</h1>
-      <p id="element-data" style="margin-left: 300px"></p>
+      <div class="chart-element">
+        <div class="el-view v1">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">每月PM2.5统计</div>
+          <div class="chart-bd v1-bd"></div>
+        </div>
+        <div class="el-view v2">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">PM2.5主要元素分布</div>
+          <div class="chart-bd v2-bd"></div>
+        </div>
+        <div class="el-view v3">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">未来一周PM2.5</div>
+          <div class="chart-bd v3-bd"></div>
+        </div>
+        <div class="el-view v4">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">每天CO₂统计</div>
+          <div class="chart-bd v4-bd"></div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="app-page page-alarm">
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>3 消防报警系统</h1>
+      <div class="chart-element">
+        <div class="el-view v1">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">传感器报警统计</div>
+          <div class="chart-bd v5-bd"></div>
+        </div>
+        <div class="el-view v2">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">告警处理统计</div>
+          <div class="chart-bd v6-bd"></div>
+        </div>
+        <div class="el-view v3">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">XX</div>
+          <div class="chart-bd v7-bd"></div>
+        </div>
+        <div class="el-view v4">
+          <i class="line-vl"></i>
+          <i class="line-vr"></i>
+          <i class="line-vt"></i>
+          <i class="line-vb"></i>
+          <b class="angle-vl"></b>
+          <b class="angle-vr"></b>
+          <b class="angle-vt"></b>
+          <b class="angle-vb"></b>
+          <div class="chart-hd">XX</div>
+          <div class="chart-bd v8-bd"></div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="app-page page-faceId">
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>4 人脸识别系统</h1>
+      <div class="ui-vcr v1"></div>
     </div>
   </div>
   <div class="app-page page-guest">
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>5 自助访客系统</h1>
+      <div class="ui-vcr v2"></div>
+      <div class="ui-vcr v3"></div>
+      <div class="ui-vcr v4"></div>
     </div>
   </div>
   <div class="app-page page-elevator">
     <div class="app-container">
       <a class="page-back" href="#home"></a>
       <h1>6 电梯检测系统</h1>
+      <div class="ui-elevator v1">12F</div>
+      <div class="ui-elevator v2">3F</div>
+      <div class="ui-elevator v3">25F</div>
     </div>
   </div>
   <div class="app-page page-hvac">
@@ -95,21 +231,33 @@
       <div class="ui-hvac v8">
         <div>
           <p>暖源分水器#1</p>
-          <p>温度:60°C  1200Mpa</p>
+          <p>温度:60°C 1200Mpa</p>
         </div>
       </div>
       <div class="ui-hvac v9">
         <div>
           <p>暖源分水器#2</p>
-          <p>温度:60°C  1300Mpa</p>
+          <p>温度:60°C 1300Mpa</p>
         </div>
       </div>
     </div>
   </div>
   <div class="app-page page-park">
     <div class="app-container">
-      <a class="page-back" href="#home"></a>
+      <div class="bg-park a1 active"></div>
+      <div class="bg-park a2"></div>
+      <div class="bg-park a3"></div>
+      <div class="bg-park a4"></div>
+
       <h1>8 停车场系统 </h1>
+      <a class="page-back" href="#home"></a>
+
+      <div class="ui-park">
+        <a href="javascript:;">二层</a>
+        <a href="javascript:;">一层</a>
+        <a href="javascript:;">负一层</a>
+        <a href="javascript:;">负二层</a>
+      </div>
     </div>
   </div>
   <div class="app-page page-traffic">
@@ -122,6 +270,13 @@
 
 <script src="static/js/jquery.min.js"></script>
 <script src="static/js/backbone-file-2.js"></script>
+<script src="static/js/echarts.min.js"></script>
+<script src="static/js/opt1.js"></script>
+<script src="static/js/opt2.js"></script>
+<script src="static/js/opt3.js"></script>
+<script src="static/js/opt4.js"></script>
+<script src="static/js/opt5.js"></script>
+<script src="static/js/opt6.js"></script>
 <script src="static/js/map.js"></script>
 </body>
 </html>
