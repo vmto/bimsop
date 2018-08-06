@@ -21,6 +21,8 @@ $(function () {
   var v6bd = echarts.init($('.v6-bd')[0]);
   var v7bd = echarts.init($('.v7-bd')[0]);
   var v8bd = echarts.init($('.v8-bd')[0]);
+  var v9bd = echarts.init($('.v9-bd')[0]);
+  var v11bd = echarts.init($('.v11-bd')[0]);
 
   /*----------------------------------- BackBone Router --------------------------------------*/
 
@@ -83,10 +85,12 @@ $(function () {
     pageFaceId: function () {
       goto('faceId');
       console.log('04');
+      v9bd.resize();
     },
     pageGuest: function () {
       goto('guest');
       console.log('05');
+      v11bd.resize();
     },
     pageElevator: function () {
       goto('elevator');
@@ -187,6 +191,12 @@ $(function () {
       // v7bd.setOption(opt7);
       // v8bd.setOption(opt8);
 
+      opt4.legend.data = ['大厅','办公区'];
+      opt4.series[0].name = '大厅';
+      opt4.series[1].name = '办公区';
+      v9bd.setOption(opt4);
+      v11bd.setOption(opt4);
+
       v1bd.hideLoading();
       v2bd.hideLoading();
       v3bd.hideLoading();
@@ -195,6 +205,8 @@ $(function () {
       v6bd.hideLoading();
       // v7bd.hideLoading();
       // v8bd.hideLoading();
+      v9bd.hideLoading();
+      v11bd.hideLoading();
     }
   });
 
